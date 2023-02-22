@@ -30,14 +30,16 @@ The content in this section is extracted from a markdown file `about.md`. Just p
 
 ### Timeline
 
+![](screenshots/timeline.png)
+
 The items are rendered based on `_data/experiences.yml`. In this file is a list of experiences with attributes as follows:
 * `company`: Info about the company/institute/whatever. It has the following attributes:
-	* `name`: Name of the company.
-	* `link`: Link to the company. Optional.
-	* `logo`: Logo of the company. Optional.
-* `title`: Your title (or whatever you want to write) when in that company.
-* `start`: Start date. It needs to be in the format `YYYY-MM-DD`. `DD` doesn't matter. This field is used to sort the experiences.
-* `end`: End date. It needs to be in the format `YYYY-MM-DD`. `DD` doesn't matter. Can be Something else like `Present` as well.
+	* `name`: Name of the company. As displayed at `2.`
+	* `link`: Link to the company. `name` becomes clickable if `link` is given. Optional.
+	* `logo`: Logo of the company. As displayed at `1.`. `logo` becomes clickable if `link` is given. Optional.
+* `title`: Your title (or whatever you want to write) when in that company. As displayed at `3.`.
+* `start`: Start date. As displayed at `4.`. It needs to be in the format `YYYY-MM-DD`. `DD` doesn't matter. This field is used to sort the experiences.
+* `end`: End date. As displayed at `5.`. It needs to be in the format `YYYY-MM-DD`. `DD` doesn't matter. Can be Something else like `Present` as well.
 
 A sample experience may look like:
 ```yaml
@@ -49,3 +51,5 @@ A sample experience may look like:
   start: 2019-07-01
   end: 2021-01-01
 ```
+
+
