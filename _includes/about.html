@@ -1,0 +1,8 @@
+<div class="section" id="about">
+  <div class="section-title">About Me</div>
+  <hr />
+  <div class="content">
+    {% capture my_include %}{% include_relative about.md %}{% endcapture %}
+    {{ my_include | markdownify }}
+  </div>
+</div>
