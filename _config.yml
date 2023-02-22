@@ -1,5 +1,5 @@
 title: Your awesome page title
-description: a short description for your self. cool.
+description: a short description for yourself. cool.
 email: your-email@example.com
 github_username:  jekyll
 linkedin_username: jekyll
@@ -9,8 +9,3 @@ resume: assets/resume.pdf
 name: James Clerk Maxwell
 profile-photo: assets/img/head.png
 background-img: assets/img/bg.jpg
-
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
