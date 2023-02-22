@@ -1,17 +1,22 @@
-- company: Google
-  link: https://google.com/
+- company:
+    name: Google
+    link: https://google.com/
+    logo: assets/img/google.svg
   title: Software engineer
-  start: 2019
-  end: 2021
-- company: Microsoft
+  start: 2019-07-01
+  end: 2021-01-01
+- company:
+    name: Microsoft
   title: Intern
-  start: 2018
-  end: 2021
-- company: Twitter
+  start: 2018-07-01
+  end: 2021-01-01
+- company:
+    name: Twitter
   title: Toilet cleaner
-  start: 2015
-  end: 2021
-- company: Yahoo
+  start: 2015-04-01
+  end: 2021-01-01
+- company:
+    name: Yahoo
   title: Nobody
-  start: 2020
-  end: 2021
+  start: 2020-01-01
+  end: 2021-01-01
