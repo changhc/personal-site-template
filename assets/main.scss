@@ -29,6 +29,18 @@ div.timeline {
       max-width: 250px;
       min-height: 50px;
       border: 1px solid #ddd;
+
+      .company {
+        font-size: 14pt;
+      }
+
+      a.company {
+        color: #0033cc;
+        text-decoration: none;
+        &:hover {
+          color: #5599cc;
+        }
+      }
     }
 
     @mixin timelinePoint() {
