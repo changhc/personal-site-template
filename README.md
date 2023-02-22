@@ -2,6 +2,8 @@
 
 Adapted from [jasonlai](`https://www.wslai.net/`).
 
+Disclaimer: I do not own any of the images. They are free resources online.
+
 ## How to use
 1. Clone this repo
 1. Modify the desired values
