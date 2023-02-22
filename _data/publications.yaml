@@ -1,5 +1,4 @@
 - title: Face distortion aftereffects evoked by featureless first-order stimulus configurations 
-  link: https://pubmed.ncbi.nlm.nih.gov/23403400/
   authors:
     - name: Pál Vakli
       link: https://pubmed.ncbi.nlm.nih.gov/?term=Vakli+P&cauthor_id=23403400
@@ -8,3 +7,13 @@
     - name: Stefan R Schweinberger
     - name: Gyula Kovács
     - name: Foobar
+  published_at: Front Psychol
+  year: 2012
+  paper: https://pubmed.ncbi.nlm.nih.gov/23403400/
+  site: https://pubmed.ncbi.nlm.nih.gov/23403400/
+
+- title: blablablablabla
+  authors:
+    - name: Foobar
+  published_at: To appear
+  paper: https://google.com

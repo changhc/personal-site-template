@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+div.section-title {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
 div.timeline {
   margin: 0;
   padding-top: 70px;
@@ -148,14 +153,29 @@ div.timeline {
   }
 }
 
-div.author {
-  color: #333;
+div.publications {
+  div.row {
+    margin: 10px 0;
 
-  a {
-    color: #0033cc;
-  }
+    div.title {
+      font-size: 13pt;
+      font-weight: bold;
+    }
 
-  .self {
-    font-weight: bold;
+    div.author {
+      color: #333;
+
+      a {
+        color: #0033cc;
+      }
+
+      .self {
+        font-weight: bold;
+      }
+    }
+
+    div.published_at {
+      font-style: italic;
+    }
   }
 }
