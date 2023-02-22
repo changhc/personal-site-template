@@ -1,0 +1,31 @@
+<div class="section" id="publications">
+  <div class="section-title">Publications</div>
+  <hr />
+  {% for pub in site.data.publications %}
+    <div class="row">
+      <div class="screenshot">
+        <a href="{% if pub.site %}{{ pub.site }}{% else %}{{ pub.paper }}{% endif %}">
+          <img src="{{ pub.screenshot }}" />
+        </a>
+      </div>
+      <div class="text">
+        <div class="title">{{ pub.title }}</div>
+        <div class="author">
+          {% for author in pub.authors %}
+            {% if forloop.index == pub.authors.size and pub.authors.size != 1 %}and {% endif %}
+            {% if author.name == site.name %}
+              <a href="/"><span class="self">{{ author.name }}</span></a>
+            {% else %}
+              {% if author.link %}<a href="{{ author.link }}">{% endif %}
+              {{ author.name }}{% if forloop.index != pub.authors.size %}, {% endif %}
+              {% if author.link %}</a>{% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="published_at">{{ pub.published_at }}{% if pub.year %}, {{ pub.year }}{% endif %}</div>
+        <div class="icon-line"><i class="fa-sharp fa-solid fa-book"></i><a href="{{ pub.paper }}"><span>Paper</span></a></div>
+        {% if pub.site %}<div class="icon-line"><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="{{ pub.site }}"><span>Project website</span></a></div>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -7,6 +7,32 @@
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #0033cc;
+}
+
+div.section-title {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+div.section {
+  max-width: 900px;
+  margin-bottom: 1em;
+  margin: 0 auto;
+}
+
+div.icon-line {
+  display: flex;
+  align-items: center;
+
+  i {
+    width: 16px;
+    margin-right: 4px;
+  }
+}
+
 div.timeline {
   margin: 0;
   padding-top: 70px;
@@ -47,7 +73,6 @@ div.timeline {
 
       a.company {
         color: #0033cc;
-        text-decoration: none;
 
         &:hover {
           color: #5599cc;
@@ -141,6 +166,44 @@ div.timeline {
         top: 43px;
         left: -13px;
       }
+    }
+  }
+}
+
+div#publications {
+  div.row {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: row;
+
+    div {
+      margin-bottom: 4px;
+    }
+
+    div.screenshot {
+      flex: 0 0 250px;
+      margin-right: 16px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    div.title {
+      font-size: 13pt;
+      font-weight: bold;
+    }
+
+    div.author {
+      color: #333;
+
+      .self {
+        font-weight: bold;
+      }
+    }
+
+    div.published_at {
+      font-style: italic;
     }
   }
 }
