@@ -1,6 +1,8 @@
 # Template for a simple personal website
 
-Adapted from [jasonlai](`https://www.wslai.net/`).
+[Demo](https://changhc.me/personal-site-template/)
+
+Adapted from [jasonlai](https://www.wslai.net/).
 
 Disclaimer: I do not own any of the images. They are free resources online.
 
