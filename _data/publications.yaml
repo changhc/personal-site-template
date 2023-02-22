@@ -7,7 +7,7 @@
     - name: Márta Zimmer
     - name: Stefan R Schweinberger
     - name: Gyula Kovács
-    - name: Foobar
+    - name: James Clerk Maxwell
   published_at: Front Psychol
   year: 2012
   paper: https://pubmed.ncbi.nlm.nih.gov/23403400/
@@ -16,6 +16,6 @@
 - title: blablablablabla
   screenshot: assets/img/oakley-sciencedog.gif
   authors:
-    - name: Foobar
+    - name: James Clerk Maxwell
   published_at: To appear
   paper: https://google.com
