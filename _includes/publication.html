@@ -1,0 +1,36 @@
+<div>
+  <h3>Publications</h3>
+  <hr />
+  {% for pub in site.data.publications %}
+    <div class="pub">
+      <div class="screenshot">
+        {% if pub.link %}
+        <a href="{{ pub.link }}">
+        {% endif %}
+        <img src="{{ pub.screenshot }}" />
+        {% if pub.link %}
+        </a>
+        {% endif %}
+      </div>
+      <div class="text">
+        <div class="title">{{ pub.title }}</div>
+        <div class="author">
+          {% for author in pub.authors %}
+            {% if forloop.index == pub.authors.size %}and {% endif %}
+            {% if author.name == site.name %}
+            <a href="/"><span class="self">{{ author.name }}</span></a>
+            {% else %}
+            {% if author.link %}
+            <a href="{{ author.link }}">
+            {% endif %}
+            {{ author.name }}{% if forloop.index != pub.authors.size %}, {% endif %}
+            {% if author.link %}
+            </a>
+            {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

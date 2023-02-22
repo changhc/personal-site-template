@@ -7,6 +7,10 @@
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 div.timeline {
   margin: 0;
   padding-top: 70px;
@@ -47,7 +51,6 @@ div.timeline {
 
       a.company {
         color: #0033cc;
-        text-decoration: none;
 
         &:hover {
           color: #5599cc;
@@ -142,5 +145,17 @@ div.timeline {
         left: -13px;
       }
     }
+  }
+}
+
+div.author {
+  color: #333;
+
+  a {
+    color: #0033cc;
+  }
+
+  .self {
+    font-weight: bold;
   }
 }
