@@ -1,22 +1,25 @@
 <html>
   <head>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="assets/main.scss" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="assets/main.css" rel="stylesheet">
   </head>
   <body>
     Hi
     <div style="height: 800px;">123</div>
-    {% assign exps = site.data.experiences | sort: "start" | reverse %}
-    {% for exp in exps %}
-      {% assign remainder = forloop.index0 | modulo: 2 %}
-      <div class="{% if remainder == 1 %}right{% endif %}">
-        <div class="box" data-aos="fade-{% if remainder == 0 %}right{% else %}left{% endif %}" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
-          <div>{{ exp.company }}</div>
-          <div>{{ exp.title }}</div>
-          <div>{{ exp.start }} - {{ exp.end }}</div>
+    <div class="timeline">
+      {% assign exps = site.data.experiences | sort: "start" | reverse %}
+      {% for exp in exps %}
+        {% assign remainder = forloop.index0 | modulo: 2 %}
+        <div class="wrapper" data-aos="fade-{% if remainder == 0 %}right{% else %}left{% endif %}" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+          <div class="content">
+            <div>{{ exp.company }}</div>
+            <div>{{ exp.title }}</div>
+            <div>{{ exp.start }} - {{ exp.end }}</div>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
     
     <div style="height: 800px;">123</div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
