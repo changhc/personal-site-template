@@ -16,6 +16,12 @@ div.section-title {
   font-weight: bold;
 }
 
+div.section {
+  max-width: 900px;
+  margin-bottom: 1em;
+  margin: 0 auto;
+}
+
 div.timeline {
   margin: 0;
   padding-top: 70px;
@@ -155,7 +161,22 @@ div.timeline {
 
 div.publications {
   div.row {
-    margin: 10px 0;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: row;
+
+    div {
+      margin-bottom: 4px;
+    }
+
+    div.screenshot {
+      flex: 0 0 250px;
+      margin-right: 16px;
+
+      img {
+        width: 100%;
+      }
+    }
 
     div.title {
       font-size: 13pt;
