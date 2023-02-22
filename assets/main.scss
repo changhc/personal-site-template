@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: #0033cc;
 }
 
 div.section-title {
@@ -20,6 +21,16 @@ div.section {
   max-width: 900px;
   margin-bottom: 1em;
   margin: 0 auto;
+}
+
+div.icon-line {
+  display: flex;
+  align-items: center;
+
+  i {
+    width: 16px;
+    margin-right: 4px;
+  }
 }
 
 div.timeline {
@@ -185,10 +196,6 @@ div.publications {
 
     div.author {
       color: #333;
-
-      a {
-        color: #0033cc;
-      }
 
       .self {
         font-weight: bold;

@@ -23,8 +23,8 @@
           {% endfor %}
         </div>
         <div class="published_at">{{ pub.published_at }}{% if pub.year %}, {{ pub.year }}{% endif %}</div>
-        <a href="{{ pub.paper }}"><div>Paper</div></a>
-        {% if pub.site %}<a href="{{ pub.site }}"><div>Project website</div></a>{% endif %}
+        <div class="icon-line"><i class="fa-sharp fa-solid fa-book"></i><a href="{{ pub.paper }}"><span>Paper</span></a></div>
+        {% if pub.site %}<div class="icon-line"><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="{{ pub.site }}"><span>Project website</span></a></div>{% endif %}
       </div>
     </div>
   {% endfor %}
