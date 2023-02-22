@@ -8,7 +8,7 @@ resume: assets/resume.pdf
 
 name: James Clerk Maxwell
 profile-photo: assets/img/head.png
-background-img: img/bg.jpg
+background-img: assets/img/bg.jpg
 
 # Build settings
 theme: minima
