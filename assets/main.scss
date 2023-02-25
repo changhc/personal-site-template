@@ -231,11 +231,19 @@ div#publications {
 
     div {
       margin-bottom: 4px;
+
+      @media screen and (max-width: 540px) {
+        font-size: 10pt;
+      }
     }
 
     div.screenshot {
-      flex: 0 0 250px;
+      flex: 0 0 150px;
       margin-right: 16px;
+
+      @media screen and (min-width: 540px) {
+        flex: 0 0 250px;
+      }
 
       img {
         width: 100%;
